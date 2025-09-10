@@ -1,0 +1,102 @@
+/* Custom Styles for Musical Instruments Store */
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #6f42c1;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.category-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-card i {
+    color: var(--primary-color);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #3a5fc8;
+    border-color: #3a5fc8;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero .display-4 {
+        font-size: 2rem;
+    }
+    
+    .hero .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Cart and Wishlist styles */
+.cart-item, .wishlist-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child, .wishlist-item:last-child {
+    border-bottom: none;
+}
+
+.quantity-control {
+    width: 120px;
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+/* Animation for AJAX actions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.alert {
+    animation: fadeIn 0.5s;
+}
